@@ -34,28 +34,28 @@ require('alpinejs');
 
 
 
-$("#message_form").submit(function(e){
-e.preventDefault(); 
-});
-// }
-    $('#message_Input').keypress((e)=>{
+// $("#message_form").submit(function(e){
+// e.preventDefault(); 
+// });
+// // }
+//     $('#message_Input').keypress((e)=>{
         
-        if (e.key == "Enter") {
-            e.preventDefault();
-            let user = $('#username').html();
+//         if (e.key == "Enter") {
+//             e.preventDefault();
+//             let user = $('#username').html();
 
-            let data ={
-                    '_token' : $('meta[name=csrf-token]').attr('content'),
-                    username: user ,
-                    message: $('#message_Input').val()
-                };
+//             let data ={
+//                     '_token' : $('meta[name=csrf-token]').attr('content'),
+//                     username: user ,
+//                     message: $('#message_Input').val()
+//                 };
 
-            $.ajax({
-              type: "get",
-              url: '/larvTest/chat-app/public/sent-message',
-              data: data,
-            });
+//             $.ajax({
+//               type: "get",
+//               url: '/larvTest/chat-app/public/sent-message',
+//               data: data,
+//             });
 
-            $("#message_Input").val('');
-          }
-    });
+//             $("#message_Input").val('');
+//           }
+//     });
