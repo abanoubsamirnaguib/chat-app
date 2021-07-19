@@ -1,0 +1,37 @@
+{
+	"authHost": "http://localhost/larvTest/chat-app/public/",
+	"authEndpoint": "/broadcasting/auth",
+	"clients": [
+		{
+			"appId": "4ad01c0e32c8f2f1",
+			"key": "8ba9421cd43a9e3f148eda4d337518d8"
+		}
+	],
+	"database": "redis",
+	"databaseConfig": {
+		"redis": {},
+		"sqlite": {
+			"databasePath": "/database/laravel-echo-server.sqlite"
+		}
+	},
+	"devMode": true,
+	"host": null,
+	"port": "6001",
+	"protocol": "http",
+	"socketio": {},
+	"secureOptions": 67108864,
+	"sslCertPath": "",
+	"sslKeyPath": "",
+	"sslCertChainPath": "",
+	"sslPassphrase": "",
+	"subscribers": {
+		"http": true,
+		"redis": true
+	},
+	"apiOriginAllow": {
+		"allowCors": false,
+		"allowOrigin": "",
+		"allowMethods": "",
+		"allowHeaders": ""
+	}
+}
