@@ -49,7 +49,7 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": ["laravel/dusk"]
         }
     },
     "config": {
@@ -58,5 +58,6 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true 
+
 }
